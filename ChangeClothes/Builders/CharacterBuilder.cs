@@ -8,6 +8,7 @@ namespace ChangeClothes.Builders
     abstract class CharacterBuilder
     {
         protected Character _character;
+        protected string _imagesRootPath;
 
         public Character GetCharacter()
         {
@@ -16,7 +17,17 @@ namespace ChangeClothes.Builders
 
         public void SetCharacter(Character character)
         {
-            _character = character;
+            if (_character == null)
+                _character = new Character();
+
+            _character.CharacterPath = character.CharacterPath;
+            _character.TopHead = character.TopHead;
+            _character.Eyes = character.Eyes;
+            _character.Lips = character.Lips;
+            _character.Neck = character.Neck;
+            _character.UpperBody = character.UpperBody;
+            _character.LowerBody = character.LowerBody;
+            _character.Foot = character.Foot;
         }
 
         public abstract void WearHat();

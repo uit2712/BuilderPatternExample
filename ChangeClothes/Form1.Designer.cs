@@ -32,7 +32,7 @@
             this.lblCharacter = new System.Windows.Forms.Label();
             this.cbbCharacter = new System.Windows.Forms.ComboBox();
             this.lblClothes = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbStylist = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // pnlCharacter
@@ -57,9 +57,6 @@
             // 
             this.cbbCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCharacter.FormattingEnabled = true;
-            this.cbbCharacter.Items.AddRange(new object[] {
-            "Doraemon",
-            "Nobita"});
             this.cbbCharacter.Location = new System.Drawing.Point(506, 20);
             this.cbbCharacter.Name = "cbbCharacter";
             this.cbbCharacter.Size = new System.Drawing.Size(121, 21);
@@ -75,24 +72,22 @@
             this.lblClothes.TabIndex = 1;
             this.lblClothes.Text = "Quần áo";
             // 
-            // comboBox1
+            // cbbStylist
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Cô nàng quyến rũ"});
-            this.comboBox1.Location = new System.Drawing.Point(506, 47);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.cbbCharacter_SelectedIndexChanged);
+            this.cbbStylist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbStylist.FormattingEnabled = true;
+            this.cbbStylist.Location = new System.Drawing.Point(506, 47);
+            this.cbbStylist.Name = "cbbStylist";
+            this.cbbStylist.Size = new System.Drawing.Size(121, 21);
+            this.cbbStylist.TabIndex = 2;
+            this.cbbStylist.SelectedIndexChanged += new System.EventHandler(this.cbbStylist_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 587);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbStylist);
             this.Controls.Add(this.lblClothes);
             this.Controls.Add(this.cbbCharacter);
             this.Controls.Add(this.lblCharacter);
@@ -110,7 +105,7 @@
         private System.Windows.Forms.Label lblCharacter;
         private System.Windows.Forms.ComboBox cbbCharacter;
         private System.Windows.Forms.Label lblClothes;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbStylist;
     }
 }
 

@@ -1,16 +1,14 @@
 ﻿using ChangeClothes.Builders;
+using System;
 using System.IO;
 
 namespace ChangeClothes.ConcreteBuilders
 {
-    /// <summary>
-    /// Concrete character builder
-    /// </summary>
-    class SexyGirl : CharacterBuilder
+    class StrongMen : CharacterBuilder
     {
-        public SexyGirl()
+        public StrongMen()
         {
-            _imagesRootPath = @"D:\study\mau thiet ke\builder pattern\BuilderPattern\ChangeClothes\Images\SexyGirls";
+            _imagesRootPath = @"D:\study\mau thiet ke\builder pattern\BuilderPattern\ChangeClothes\Images\StrongMen";
         }
 
         public override void PaintLips()
@@ -40,12 +38,12 @@ namespace ChangeClothes.ConcreteBuilders
 
         public override void WearShoes()
         {
-            _character.ShoesPath = Path.Combine(_imagesRootPath, "sandals.png");
+            _character.ShoesPath = Path.Combine(_imagesRootPath, "shoes.png");
         }
 
         public override void WearTrousers()
         {
-            _character.TrousersPath = Path.Combine(_imagesRootPath, "skirt.png");
+            _character.TrousersPath = Path.Combine(_imagesRootPath, "shorts.png");
         }
     }
 }
