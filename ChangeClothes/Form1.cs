@@ -31,7 +31,7 @@ namespace ChangeClothes
 
         private void InitComboBox<T>(ComboBox comboBox) where T : class
         {
-            // create instances of every subclass of Character
+            // create instances of every subclass of T class
             IEnumerable<T> exporters = typeof(T)
                     .Assembly.GetTypes()
                     .Where(t => t.IsSubclassOf(typeof(T)) && !t.IsAbstract)
