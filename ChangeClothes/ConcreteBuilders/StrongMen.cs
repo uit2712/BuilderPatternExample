@@ -1,9 +1,11 @@
 ﻿using ChangeClothes.Builders;
-using System;
 using System.IO;
 
 namespace ChangeClothes.ConcreteBuilders
 {
+    /// <summary>
+    /// Concrete character builder
+    /// </summary>
     class StrongMen : CharacterBuilder
     {
         public StrongMen()

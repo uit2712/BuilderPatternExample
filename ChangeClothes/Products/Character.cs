@@ -23,5 +23,17 @@ namespace ChangeClothes.Products
         public string ShirtPath { get; set; }
         public string TrousersPath { get; set; }
         public string ShoesPath { get; set; }
+
+        public void CopyProperties(Character character)
+        {
+            CharacterPath = character.CharacterPath;
+            TopHead = character.TopHead;
+            Eyes = character.Eyes;
+            Lips = character.Lips;
+            Neck = character.Neck;
+            UpperBody = character.UpperBody;
+            LowerBody = character.LowerBody;
+            Foot = character.Foot;
+        }
     }
 }

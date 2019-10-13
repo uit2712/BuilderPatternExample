@@ -20,14 +20,7 @@ namespace ChangeClothes.Builders
             if (_character == null)
                 _character = new Character();
 
-            _character.CharacterPath = character.CharacterPath;
-            _character.TopHead = character.TopHead;
-            _character.Eyes = character.Eyes;
-            _character.Lips = character.Lips;
-            _character.Neck = character.Neck;
-            _character.UpperBody = character.UpperBody;
-            _character.LowerBody = character.LowerBody;
-            _character.Foot = character.Foot;
+            _character.CopyProperties(character);
         }
 
         public abstract void WearHat();
